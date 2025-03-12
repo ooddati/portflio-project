@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" alt="Logo" />
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#">Page</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="details">
+        <h1>Hello, I'm<br /><span>Sandipa Bhattarai</span></h1>
+        <h1><span>Web Designer</span></h1>
+        <p>
+          We denounce with righteous indignation dislike<br />
+          demoralized by the charm of pleasure
+        </p>
+      </div>
+      <div class="images">
+        <img src="images/san.jpg" alt="Profile Picture" />
+      </div>
+      <div class="c1">
+        <h3 class="h31">IT<span>Student</span></h3>
+        <hr />
+        <h3 class="h32">First <br /><span> Projects</span></h3>
+        <hr />
+      </div>
+    </div>
+    <section class="First">
+      <div class="slider-container">
+        <div class="slider">
+          <img src="images/slide1.jpg" class="slide" />
+          <img src="images/slide2`.jpg" class="slide" />
+          <img src="images/slide3`.jpg" class="slide" />
+          <img src="images/slide4`.jpg" class="slide" />
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+    <section class="second" id="services">
+      <h2 style="text-align: center; margin-bottom: 2rem">Our Services</h2>
+      <div class="services-container">
+        <!-- Web Design Card -->
+        <div class="service-card">
+          <img src="images/web.jpeg" alt="Web Design" class="card-image" />
+          <div class="card-content">
+            <h3>Web Design</h3>
+            <p>
+              Creating responsive and modern website designs that engage users
+              and enhance user experience. We focus on clean layouts and
+              intuitive navigation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Web Maintenance Card -->
+        <div class="service-card">
+          <img
+            src="images/main.jpeg"
+            alt="Web Maintenance"
+            class="card-image"
+          />
+          <div class="card-content">
+            <h3>Web Maintenance</h3>
+            <p>
+              Regular updates, security checks, and content management to keep
+              your website running smoothly and efficiently at all times.
+            </p>
+          </div>
+        </div>
+
+        <!-- SEO Card -->
+        <div class="service-card">
+          <img src="images/seo.jpeg" alt="SEO" class="card-image" />
+          <div class="card-content">
+            <h3>SEO Optimization</h3>
+            <p>
+              Improving website visibility and search engine rankings through
+              comprehensive keyword research, on-page optimization, and quality
+              link building.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="About" class="about">
+      <div class="main">
+        <img src="images/img2.jpg" alt="About Image" />
+        <div class="about-text">
+          <h2>About <span>Me</span></h2>
+          <h5>Developer <span>& Designer</span></h5>
+          <p>
+            Hello! I am a dedicated full stack web developer and web designer
+            with a passion for creating visually stunning and highly functional
+            websites. With a solid foundation in HTML, CSS, JavaScript, and
+            Java. My work involves designing intuitive user interfaces and
+            developing seamless web applications,
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <h1>Sandipa Bhattarai</h1>
+      <div class="footer">
+        <div class="left">
+          <h3>You Can Contect me Through The links below</h3>
+          <p>
+            To develop and design a good website - please contact me on the link
+            below.
+          </p>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/sandipa.bhattarai.73"
+              target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/bhattaraisandipa/"
+              target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRnZvsmmFDbSMjJNfbDZWVNFwfZVzWzgwmZxspbkfnbLtrvDlRTlmDbzghCJWTmsVdBHvwg"
+              target="_blank"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+          <p class="end">Assignment project-portfolio</p>
+        </div>
+
+        <div class="right">
+          <form id="form">
+            <h1>Contact Me</h1>
+            <div class="input-box">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <input
+                type="number"
+                name="number"
+                id="number"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <textarea
+                id="message"
+                rows="5"
+                placeholder="Write your message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="submit">Send Message</button>
+            <p id="responseMessage"></p>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

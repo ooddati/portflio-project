@@ -1,0 +1,524 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0b0a0a;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background-color: #121010;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+nav img.logo {
+    height: 90px;
+    width: 200px;
+    border-radius: 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 13px 25px;
+    border-radius: 20px;
+}
+
+nav ul li a:hover {
+    color: green;
+    border: 1px solid;
+}
+
+.details {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.details h1 span {
+    color: #2a831f;
+}
+
+.details p {
+    color: #aea3a3;
+}
+
+.details button:hover {
+    color: white;
+}
+
+.details a {
+    display: inline-block;
+    background-color: black;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.details a:hover {
+    background-color: transparent;
+    border: 2px solid;
+}
+
+.images {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.images img {
+    height: 350px;
+    width: 300px;
+    border-radius: 100%;
+    border: 10px solid #fff;
+}
+
+.c1 {
+    text-align: center;
+    color: #2e0eb1;
+    margin-top: 50px;
+}
+
+.c1 hr {
+    margin: 20px auto;
+    width: 50%;
+}
+
+/* Image Slider */
+.slider-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+  
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.slide {
+    min-width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+  
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+  
+.prev { left: 0; }
+.next { right: 0; }
+  
+@media (max-width: 480px) {
+    .slide {
+      height: 250px;
+    }
+    
+    .prev, .next {
+      padding: 0.5rem;
+      font-size: 1rem;
+  }
+}
+  
+  /* Services Section */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+  
+.service-card {
+    color: white;
+  
+    flex: 1 1 300px;
+    max-width: 400px;
+    background: #0e0a46;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+  
+.card-content {
+    padding: 1.5rem;
+}
+  
+.card-content h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}  
+
+.about {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #121010;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+    border-radius: 50px;
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+    color: gold;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h2 span {
+    color: rgb(223, 122, 122);
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #dcdcdc;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+    text-align: justify;
+}
+
+
+footer{
+   color: white;
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    background-color: #0a0909;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+   
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    height: 99%;
+    width: 100%;
+    
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #a32222;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: #6d686d;
+    text-decoration: none;
+    font-size: 20px;
+  
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+.end{
+    position: absolute;
+    color: blueviolet;
+    bottom : 20px;
+    font-size: 14px;
+  
+}
+
+.right {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px;
+}
+
+#form {
+    padding: 2rem;
+    background: #17103b;
+    border-radius: 10px;
+    color: white;
+    height: 90%;
+}
+
+.input-box {
+    margin: 0.3rem 0;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.3rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit {
+    width: 100%;
+    padding: 0.8rem;
+    background: #ff473d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.submit:hover {
+    background: #ff362b;
+}
+
+#responseMessage {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .main {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .about img {
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      width: 90%;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    nav ul {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    nav ul li {
+      margin: 10px;
+    }
+  
+    .header .details h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about-text {
+      width: 100%;
+      padding: 0 20px;
+    }
+  
+    .about-text h2 {
+      font-size: 50px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header .details h1 {
+      font-size: 2rem;
+    }
+  
+    .images img {
+      width: 250px;
+      height: 300px;
+    }
+  
+    .service-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      height: auto;
+      padding: 20px 0;
+    }
+  
+    .left,
+    .right {
+      width: 100%;
+      max-width: 100%;
+      text-align: center;
+      margin: 20px 0;
+    }
+  
+    .social {
+      justify-content: center;
+    }
+  
+    #form {
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .about img {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .about-text h2 {
+      font-size: 40px;
+    }
+  
+    .about-text h5 {
+      font-size: 18px;
+    }
+  
+    .about-text p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul li a {
+      padding: 8px 15px;
+      font-size: 14px;
+    }
+  
+    .header .details h1 {
+      font-size: 1.8rem;
+    }
+  
+    .images img {
+      width: 200px;
+      height: 250px;
+      border-width: 5px;
+    }
+  
+    .c1 h3 {
+      font-size: 1rem;
+    }
+  
+    .slider-container {
+      margin: 1rem auto;
+    }
+  
+    .slide {
+      height: 250px;
+    }
+  
+    .prev, .next {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .about-text h2 {
+      font-size: 30px;
+    }
+  
+    .about-text h5 {
+      font-size: 16px;
+    }
+  
+    .about-text p {
+      font-size: 14px;
+      line-height: 24px;
+    }
+  
+    footer h1 {
+      font-size: 1.5rem;
+    }
+  
+    .left h3 {
+      font-size: 1rem;
+    }
+  
+    .social a {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+      margin: 15px 8px;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .header .details h1 {
+      font-size: 1.5rem;
+    }
+  
+    .details p {
+      font-size: 14px;
+    }
+  
+    .about-text h2 {
+      font-size: 25px;
+    }
+  }
